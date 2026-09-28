@@ -1,9 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router"
-import { registerUserApi } from "../api/authApi";
 import { loginUserAction, registerUserAction } from "../state/authActions";
-import toast, { Toaster } from 'react-hot-toast';
 
 
 export const useAuth = () => {

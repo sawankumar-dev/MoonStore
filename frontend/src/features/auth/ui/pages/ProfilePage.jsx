@@ -17,6 +17,10 @@ const ProfilePage = () => {
         joinedAt: "2026-08-10T06:19:34.930Z"
     };
 
+    const joinedDate = currentUser.joinedAt
+        ? new Date(currentUser.joinedAt)
+        : new Date("2026-08-10T06:19:34.930Z");
+
     return (
         <div className="min-h-screen text-slate-200 antialiased font-sans p-4 md:p-8">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8">
@@ -34,7 +38,7 @@ const ProfilePage = () => {
                         <h2 className="text-xl font-bold text-white tracking-tight">{currentUser.name}</h2>
                         <p className="text-xs text-indigo-400 font-mono mt-0.5 capitalize">{currentUser.role} Account</p>
                         <p className="text-xs text-slate-400 mt-2">
-                            Member since: {new Date(currentUser.joinedAt || Date.now()).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+                            Member since: {joinedDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
                         </p>
                     </div>
 

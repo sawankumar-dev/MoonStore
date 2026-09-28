@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
@@ -20,9 +19,9 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: "Amit Kumar Sharma",
+    name: "Sawan Kumar",
     role: "Frontend Developer",
-    initials: "AK",
+    initials: "SK",
     description:
       "Passionate React developer focused on building scalable, responsive, and user-friendly web applications.",
     linkedin: "https://linkedin.com",
