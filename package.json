@@ -11,7 +11,7 @@
     "server": "cd server && npm run dev",
     "frontend": "cd frontend && npm run dev",
     "build": "npm install && cd server && npm install && cd ../frontend && npm install --include=dev && npm run build",
-    "start": "cd server && node src/app.js"
+    "start": "cd server && node src/server.js"
   }
   ,
   "repository": {
