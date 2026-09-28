@@ -1,0 +1,10 @@
+@import "tailwindcss";
+/* Container specific scrollbar */
+/* Firefox ke liye */
+html {
+  scrollbar-width: none;          /* auto | thin | none */
+  scrollbar-color: #888 #f1f1f1;    /* thumb color | track color */
+}
+.page-card {
+  @apply rounded-2xl border border-white/[0.06] bg-white/[0.03] p-6 backdrop-blur-sm;
+}

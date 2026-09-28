@@ -1,0 +1,24 @@
+{
+  "name": "MoonStore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd server && npm run dev",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sawankumar-dev/apnaStore.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sawankumar-dev/apnaStore/issues"
+  },
+  "homepage": "https://github.com/sawankumar-dev/apnaStore#readme"
+}
