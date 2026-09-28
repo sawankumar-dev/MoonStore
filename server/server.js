@@ -1,8 +1,8 @@
-import mongoose from "mongoose";
 import app from "./src/app.js";
+import { connectToMongoDB } from "./src/config/db.js";
 
 // 1. localhost की जगह 127.0.0.1 का उपयोग करें
-mongoose.connect("mongodb://127.0.0.1:27017/MoonStore")
+connectToMongoDB()
 .then(() => {
     console.log("Db is connected successfully!");
     

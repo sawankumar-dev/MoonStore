@@ -10,12 +10,16 @@ import vendorRouter from "./routes/vendor.routes.js";
 import adminRouter from "./routes/admin.routes.js";
 import productRouter from "./routes/product.routes.js";
 import cartRouter from "./routes/cart.routes.js";
+import dns from "node:dns"
 
 const app = express();
+dns.setServers(["0.0.0.0", "8.8.8.8"]);
+
 // 1. ES Module mein __dirname ko aise banate hain:
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-    
+
+
 app.use(express.json());
 app.use(cors({
     origin: "http://localhost:5173", 
