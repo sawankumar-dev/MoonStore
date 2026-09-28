@@ -22,7 +22,7 @@ const __dirname = path.dirname(__filename);
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://onrender.com", 
+    origin: "https://moonstore-ncu5.onrender.com", 
     credentials: true,
      methods: ["GET", "POST", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"]
