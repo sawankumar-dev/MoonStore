@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "cd server && npm run dev",
     "frontend": "cd frontend && npm run dev",
-    "build": "cd server && npm install && cd ../frontend && npm install && npm run build",
+    "build": "cd server && npm install && cd ../frontend && npm install --include=dev && npm run build",
     "start": "cd server && NODE_ENV=production node server.js"
   },
   "repository": {
